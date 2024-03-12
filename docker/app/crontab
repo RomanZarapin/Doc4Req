@@ -1,0 +1,4 @@
+*/3 * * * * root /usr/local/bin/python3 /app/cron_tasks/call_sync.py > /var/log/crontab_call_sync.log 2>&1
+0 0 * * * root /usr/local/bin/python3 /app/cron_tasks/clear_day_minutes.py > /var/log/crontab_daily.log 2>&1
+* * 1 * * root /usr/local/bin/python3 /app/cron_tasks/dump_transactions.py.py > /var/log/dump_transactions.log 2>&1
+
